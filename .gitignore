@@ -1,0 +1,23 @@
+# Source regulatory records and potentially identifying reports
+*.rds
+*.RData
+*.rda
+*.7z
+*.tar
+*.tar.gz
+*.sqlite
+**/raw/
+**/raw_data/
+**/private/
+**/internal/
+**/*_INTERNAL_*
+**/175G_*.csv
+**/DEMO_compact/
+**/REAC_compact/
+**/.Rhistory
+**/.RData
+
+# Local IDE and OS artifacts
+.Rproj.user/
+.DS_Store
+Thumbs.db
