@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: Please cite this code-and-results repository and its associated article when
+  available.
+type: software
+license: MIT
+title: 'GLP-1-Based Therapies and CNS Depressants: Model-Stage Pharmacovigilance Analysis
+  Code and Results'
+authors:
+- family-names: Huang
+  given-names: Chengxiang
+  affiliation: Department of Anesthesiology, Foshan Hospital of Traditional Chinese
+    Medicine, The Eighth Clinical Medical College of Guangzhou University of Chinese
+    Medicine, Foshan, Guangdong 528000, China
+  orcid: https://orcid.org/0009-0001-2523-129X
+version: 1.0.0
+abstract: Independent model-stage replay scripts for grouped-binomial pharmacovigilance
+  models and derived aggregate validation results from FAERS/AERS, JADER, and Canada
+  Vigilance. Restricted quarterly grouped inputs and full regulatory preprocessing
+  code are not supplied.

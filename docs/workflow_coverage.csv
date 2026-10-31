@@ -1,0 +1,16 @@
+﻿step_id,step,database,source_or_artifact,status,remaining_requirement
+A01,Official regulatory downloads,FAERS/AERS,official source data,MISSING_OR_UNVERIFIED,Author source files and independent download specs required
+A02,Source deduplication and normalized report extraction,FAERS/AERS,"20,328,568 report-level analysis matrix",MISSING_OR_UNVERIFIED,Cannot assert complete official feed-to-analysis matrix rerun
+A03,Quarterly comparator matching/checkpointing,FAERS/AERS,"Stage5E3B 5B2, 5B3A1/B2",SOURCE_AVAILABLE_NOT_PORTABLE,Requires actual matrix and DRUG_compact plus manifests
+A04,23-column to final comparative flags,FAERS/AERS,Stage5E3B 5B4A/B to 5B5,SOURCE_AVAILABLE_NOT_PORTABLE,Requires frozen upstream rows and historical gate inputs
+A05,32-column model-ready construction,FAERS/AERS,Stage5E3B 5B5A–5B5E,SOURCE_AVAILABLE_NOT_PORTABLE,Requires frozen 17-column flags and model-ready sources
+A06,Original FAERS reporting odds models,FAERS/AERS,Stage5E3B 5B5F/5B5G,HISTORICAL_MODEL_SOURCE_IDENTIFIED,Historical raw inputs withheld; candidate model code distinct
+B01,Source normalization and frozen dictionary creation,JADER; Canada,Stage6B3 and Stage6C2C,MISSING_OR_UNVERIFIED,Must not represent case processing as complete
+B02,Case-level outcome flags,JADER; Canada,Stage6C3,SOURCE_AVAILABLE_INPUTS_WITHHELD,Requires report-level and frozen mapping inputs
+B03,Drug/outcome linkage,JADER; Canada,Stage6D v1.11,SOURCE_VERSION_SUPPORTED_NOT_BYTE_PROVEN,Needs original linked RDS and dictionaries
+C01,Final grouped inputs and 67 results,All three; no record pooling,Stage6M v1.0,FROZEN_OUTPUT_VERIFIED_SOURCE_HASH_LIMITED,175G grouped inputs excluded for small cells
+C02,New standard model replay,All three,42 standard grouped models,INDEPENDENT_REPLAY_VERIFIED,Requires withheld frozen grouped inputs
+C03,New bias-reduced model replay,All three,13 bias-reduced grouped models,INDEPENDENT_REPLAY_VERIFIED,Requires withheld frozen grouped inputs
+C04,Historical no-estimate cases,All three,12 no-estimate rows,HISTORIC_STATUS_CONFIRMED,Do not force-fit
+D01,Demographic summaries and corrections,All three,"5 demographics sources, DateSex QC",SOURCE_AVAILABLE_NOT_PORTABLE,Inputs required; age/sex recode patch follows summary
+D02,Stage6N independent verification original source,All three,Original 42 models Stage6N,ORIGINAL_SCRIPT_UNAVAILABLE,"New independent replay is distinct, never replace historical source"
