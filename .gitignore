@@ -16,7 +16,6 @@
 **/REAC_compact/
 **/.Rhistory
 **/.RData
-
 # Local IDE and OS artifacts
 .Rproj.user/
 .DS_Store
